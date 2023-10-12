@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .form-container {
+            width: 300px;
+            margin: 0 auto;
+        }
+        .form-title {
+            text-align: center;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+        input[type="text"], select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            transition: background-color 0.3s;
+        }
+        select:hover {
+            background-color: green;
+        }
+        input[type="text"]:hover, input[type="text"]:focus {
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h2 class="form-title">STYLED SELECTION FIELD IN FORM</h2>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="text" id="email" name="email" required>
+
+            <label for="age">Age:</label>
+            <select id="age" name="age" required>
+                <option value="" disabled selected>Select Age Group</option>
+                <option value="below18">Below 18 years</option>
+                <option value="18-25">Between 18-25 years</option>
+                <option value="25-40">Between 25-40 years</option>
+                <option value="above60">Above 60 years</option>
+            </select>
+
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</body>
+</html>
+
